@@ -18,7 +18,7 @@ textarea { color: #222; }
 
 html {
     font-size: 1.2em;
-    line-height: 1.4;
+    line-height: 1.7;
     background: #E8E8E0;
     margin-left: 75px;
     font-family: 'Merriweather Sans', sans-serif;
@@ -69,7 +69,10 @@ iframe {
     max-width: 100%;
     }
 
-figure { background-color: #FFCA02; }
+figure { 
+    background-color: #FFCA02; 
+    margin-bottom: 70px;
+    }
 
     figure img {
         display: block;
@@ -80,8 +83,8 @@ figure { background-color: #FFCA02; }
 
     figcaption {
         font-style: italic;
-        padding: 5px 20px;
-        font-size: 1.3em;
+        padding: 10px 20px;
+        font-size: .9em;
         color: #FFFBEF;
         }
 
@@ -187,7 +190,8 @@ textarea { resize: vertical; }
         line-height: 1em;
         }
 
-.bg-main-profile { background: #00B7A6; }
+.bg-main-profile { background-color: #00B7A6; }
+.bg-secondary-profile { background-color: ; }
 .bg-subtle-grey { background-color: #E8E8E0; }
 
 /* ==== NAVIGATION ====*/
@@ -284,6 +288,60 @@ textarea { resize: vertical; }
             border-top: 1px solid #00B7A6;
             }
 
+    #page-nav-seconary {
+        border: 1px solid red;
+        }
+/* SECONDARY NAVIGATION */
+#page-nav-seconary {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    background: #fff;
+    padding-left: 75px;
+    }
+
+    #page-nav-seconary .nav {
+        width: 35px;
+        height: 35px;
+        }
+
+    #page-nav-seconary ul, #page-nav-seconary a, #page-nav-seconary li {
+        display: inline-block;
+        }
+
+        #page-nav-seconary h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: .9em;
+            }
+
+        #page-nav-seconary li li {
+            width: 43px;
+            height: 30px;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            z-index: 1;
+            vertical-align: top;
+            }
+
+        #page-nav-seconary li li:hover { 
+            overflow: visible; 
+            z-index: 4;
+            }
+
+        #page-nav-seconary li li a {
+            background: #fff;
+            }
+
+        #page-nav-seconary small {
+            width: 43px;
+            height: 30px;
+            margin-right: 5px;
+            display: inline-block;
+            }
 
 /* ==== ARTICLES ====*/
 
