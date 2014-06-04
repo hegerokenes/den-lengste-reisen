@@ -94,6 +94,8 @@ body { margin: 0; }
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
+a { color: #00B7A6; }
+
 a:focus { outline: thin dotted; }
 
 /**
@@ -102,6 +104,8 @@ a:focus { outline: thin dotted; }
 
 a:active,
 a:hover { outline: 0; }
+
+a:hover, a:focus { color: #FFCA02; }
 
 /* ==========================================================================
    Typography
@@ -198,7 +202,7 @@ mark {
 
 p,
 pre {
-    margin: 1em 0;
+    margin: 1.5em 0;
 }
 
 /**
