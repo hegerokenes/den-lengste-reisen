@@ -26,6 +26,19 @@ $(function() {
 		}
 	});
 
+	scaleFrontImage();
+
+	$(window).on("resize", function () {
+		scaleFrontImage();
+	})
+
+	
+	
+
+});
+
+function scaleFrontImage() {
+
 	$("article").imagesLoaded(function() {
 		var windowHeight = $(window).height();
 		var imageHeight = $(".main-image").height();
@@ -36,6 +49,4 @@ $(function() {
 
 		$("article .post-content").css("margin-top", topMargin - 20);	
 	});
-	
-
-});
+}
