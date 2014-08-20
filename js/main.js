@@ -17,12 +17,13 @@ $(function() {
 			$("#navigation-wrapper").addClass("open");
 			$(this).addClass("active");
 		}
-		
 	});
 
 	$(window).on("scroll", function () {
 		if($(window.scrollTop > 10)) {
-			$("article header").addClass("faded");
+			$("article header").addClass("visible");
+		} else {
+			$("article header").removeClass("visible");
 		}
 	});
 
@@ -32,7 +33,15 @@ $(function() {
 		scaleFrontImage();
 	})
 
-	
+	$("#map").on("click", function() {
+		if($(this).hasClass("active")) {
+			$(this).removeClass("active").css("height", "250px");
+		} else {
+			var windowHeight = $(window).height();
+			$(this).addClass("active");
+			$(this).css("height", windowHeight);
+		}
+	});
 	
 
 });

@@ -77,6 +77,7 @@ figure {
     figure img {
         display: block;
         width: 100%;
+        max-height: 700px;
         }
 
         img { max-width: 100%; }
@@ -137,7 +138,7 @@ textarea { resize: vertical; }
 
 .icon.large {
     width: 75px;
-    height: 55px;
+    height: 70px;
     background-size: 50px auto;
     }
 
@@ -164,10 +165,19 @@ textarea { resize: vertical; }
     height: 250px;
     background-image: url(../img/map.svg);
     background-position: top left;
-    background-size: 567px auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
+    -webkit-transform: all 1s ease;
+            transform: all 1s ease;
     }
 
+#map.active {
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8)
+    -webkit-transform: all 1s ease;
+            transform: all 1s ease;
+    }
 
 /* ==== TRAVEL COUNTER ====*/
 #travel-counter {
@@ -217,13 +227,15 @@ textarea { resize: vertical; }
         float: right;
         }
 
-    #main-menu {}
-
         #main-menu ul {
             width: 75px;
             margin-left: auto;
             margin-right: auto;
             }
+
+            #main-menu a { display: block; }
+
+            #main-menu a:hover { cursor: pointer; }
 
             #navigation-wrapper .icon {
                 background-color: transparent;
@@ -245,8 +257,10 @@ textarea { resize: vertical; }
         }
 
     .open #blog-menu { display: block; }
-
-        #blog-menu .first { margin-top: 120px; }
+        
+        #blog-menu .first { 
+            margin-top: 120px; 
+            }
 
         #blog-menu h2 {
             color: #fff;
@@ -263,13 +277,16 @@ textarea { resize: vertical; }
             text-decoration: none;
             font-size: .75em;
             display: block;
-            padding: 5px 14px;
+            padding: 10px 14px;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
             }
 
-            #blog-menu a:hover, #blog-menu a:focus { color: #FFCA02; }
+            #blog-menu a:hover, #blog-menu a:focus { 
+                color: #FFCA02; 
+                cursor: pointer;
+                }
 
             #blog-menu a small { margin-right: 3px; }
 
@@ -289,8 +306,19 @@ textarea { resize: vertical; }
             }
 
     #page-nav-seconary {
-        border: 1px solid red;
+        
         }
+
+        #page-nav-seconary .month {
+            border-left: 1px solid rgb(0, 119, 105);
+            padding-left: 20px;
+            }
+
+        #page-nav-seconary .month.first { 
+            border-left: 0;
+            padding-left: 0;
+            }
+
 /* SECONDARY NAVIGATION */
 #page-nav-seconary {
     position: fixed;
@@ -300,6 +328,7 @@ textarea { resize: vertical; }
     right: 0;
     background: #fff;
     padding-left: 75px;
+    padding-bottom: 5px;
     }
 
     #page-nav-seconary .nav {
@@ -312,8 +341,8 @@ textarea { resize: vertical; }
         }
 
         #page-nav-seconary h2 {
-            margin-top: 0;
-            margin-bottom: 0;
+            margin-top: 10px;
+            margin-bottom: -5px;
             font-size: .9em;
             }
 
@@ -325,6 +354,7 @@ textarea { resize: vertical; }
             position: relative;
             z-index: 1;
             vertical-align: top;
+            cursor: pointer;
             }
 
         #page-nav-seconary li li:hover { 
@@ -349,6 +379,7 @@ article {
     max-width: 2000px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 70px;
     position: relative;
     }
 
@@ -372,13 +403,23 @@ article {
         text-align: center;
         background-color: #E8E8E0;
         }
+        
+        article header h1, article header time  {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+            }
 
+        article header.visible h1, article header.visible time  {
+            opacity: 1;
+            transition: opacity 1s ease-out;
+            }
 
         article header img { 
             position: absolute;
             left: 0;
             top: 0;
             z-index: -1;
+            width: 100%;
             }
 
         h1, h2 {
