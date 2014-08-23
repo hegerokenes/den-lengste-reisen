@@ -56,6 +56,6 @@ function scaleFrontImage() {
 
 		$("article header").css("height", imageHeight);
 
-		$("article .post-content").css("margin-top", topMargin - 20);	
+		$("article .post-content").css("margin-top", topMargin - 60);	
 	});
 }
