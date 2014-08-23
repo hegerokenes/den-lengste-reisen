@@ -28,6 +28,7 @@ $(function() {
 	});
 
 	scaleFrontImage();
+	updateCounter();
 
 	$(window).on("resize", function () {
 		scaleFrontImage();
@@ -42,7 +43,7 @@ $(function() {
 			$(this).css("height", windowHeight);
 		}
 	});
-	
+
 
 });
 
@@ -56,6 +57,17 @@ function scaleFrontImage() {
 
 		$("article header").css("height", imageHeight);
 
-		$("article .post-content").css("margin-top", topMargin - 60);	
+		$("article .post-content").css("margin-top", topMargin - 60);
 	});
+}
+
+function updateCounter() {
+	var now = new Date();
+	var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+	var startDate = new Date(2014, 7, 18);
+	var diff = Math.abs(startDate.getTime() - today.getTime());
+
+	var oneDay = 1000 * 60 * 60 * 24;
+	var days = Math.round(diff/oneDay);
+	$("#travel-counter-value").text(days);
 }
