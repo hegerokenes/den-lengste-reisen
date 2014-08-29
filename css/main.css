@@ -244,7 +244,7 @@ textarea { resize: vertical; }
     }
 
 #navigation-wrapper.open {
-    width: 250px;
+    width: 350px;
     transition: width .2s ease-out;
     }
 
@@ -276,7 +276,7 @@ textarea { resize: vertical; }
     #blog-menu {
         float: left;
         width: 70%;
-        max-width: 174px;
+        max-width: 274px;
         overflow: hidden;
         min-height: 100%;
         display: none;
