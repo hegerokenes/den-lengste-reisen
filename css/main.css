@@ -111,9 +111,9 @@ figure {
     vertical-align: top;
     }
 
-.col-3 figure {
-    width: 33%;
-    }
+.col-3 figure { width: 33%; }
+
+.col-4 figure { width: 24.5%; }
 
 fieldset {
     border: 0;
