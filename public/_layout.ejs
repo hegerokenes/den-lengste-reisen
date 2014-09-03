@@ -50,7 +50,7 @@
                             <% for(var month in public.reisebrev._data){ %>
                               <h2><%= month %></h2>
                               <% for(var slug in public.reisebrev._data[month]){ %>
-                                  <li><a href="/reisebrev/<%= slug %>"><small><%= public.reisebrev._data[month][slug].date %></small><%= public.reisebrev._data[month][slug].title %></a></li>
+                                  <li><a href="/reisebrev/<%= slug %>.html"><small><%= public.reisebrev._data[month][slug].date %></small><%= public.reisebrev._data[month][slug].title %></a></li>
                               <% }; %>
                             <% }; %>
                         </ul>
