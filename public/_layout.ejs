@@ -24,16 +24,16 @@
 
         <section id="navigation-wrapper" class="">
             <div class="main-menu-wrapper bg-main-profile">
-                <div id="travel-counter">
+                <a href="/" id="travel-counter">
                     <div id="travel-counter-value" class="days">-</div>
                     <small>dager på reise</small>
-                </div>
+                </a>
                 <nav id="main-menu">
                     <ul class="cleanlist">
                         <li><a href="#" class="no-text icon large menu" id="blog-list-menu" title="Se alle reisebrev">Bloggposter</a></li>
                         <!--<li><a href="#" class="no-text icon large people">[Om oss]</a></li>-->
-                        <li><a href="https://www.flickr.com/photos/hegerokenes/collections/72157646337037838/" class="no-text icon large flickr" title="Bilder på Flickr kolleksjon">Flickr</a></li>
-                        <li><a href="https://vimeo.com/channels/denlengstereisen" class="no-text icon large vimeo" title="Videoer på Vimdeo">Vimeo</a></li>
+                        <li><a href="https://www.flickr.com/photos/hegerokenes/collections/72157646337037838/" class="no-text icon large flickr" title="Bilder på Flickr">Flickr</a></li>
+                        <li><a href="https://vimeo.com/channels/denlengstereisen" class="no-text icon large vimeo" title="Videoer på Vimeo">Vimeo</a></li>
                         <!--<li><a href="#" class="no-text icon large instagram">[Instagram]</a></li>-->
                     </ul>
                 </nav>
@@ -50,7 +50,7 @@
                             <% for(var month in public.reisebrev._data){ %>
                               <h2><%= month %></h2>
                               <% for(var slug in public.reisebrev._data[month]){ %>
-                                  <li><a href="/reisebrev/<%= slug %>.html"><small><%= public.reisebrev._data[month][slug].date %></small><%= public.reisebrev._data[month][slug].title %></a></li>
+                                  <li style="background-image: url(<%= public.reisebrev._data[month][slug].image %>);"><a href="/reisebrev/<%= slug %>.html"><small><%= public.reisebrev._data[month][slug].date %></small><%= public.reisebrev._data[month][slug].title %></a></li>
                               <% }; %>
                             <% }; %>
                         </ul>

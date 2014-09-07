@@ -1,23 +1,26 @@
 {
-  "August 2014":
-  {
-    "2014-08-28": {
-      "date": "28.08",
-      "title": "Dykkeparadiset Isla Cozumel"
-    },
-    "2014-08-24": {
-      "date": "24.08",
-      "title": "Goodbye Isla Mujeres"
-    },
-    "2014-08-23": {
-      "date": "23.08",
-      "title": "Den første uka"
-    }
-  },
   "September 2014": {
     "2014-09-03": {
       "date": "03.09",
-      "title": "Triatlon på Cozumel"
+      "title": "Triatlon på Cozumel",
+      "image": "https://farm6.staticflickr.com/5586/15057407642_928c7a1f56_m.jpg"
+    }
+  },
+  "August 2014": {
+    "2014-08-28": {
+      "date": "28.08",
+      "title": "Dykkeparadiset Isla Cozumel",
+      "image": "https://farm4.staticflickr.com/3845/15057808825_1e5dfc9322_m.jpg"
+    },
+    "2014-08-24": {
+      "date": "24.08",
+      "title": "Goodbye Isla Mujeres",
+      "image": "https://farm4.staticflickr.com/3898/15034868946_4b6cefe4f0_m.jpg"
+    },
+    "2014-08-23": {
+      "date": "23.08",
+      "title": "Den første uka",
+      "image": "https://farm4.staticflickr.com/3915/14817947640_d89a9941b1_m.jpg"
     }
   }
 }
