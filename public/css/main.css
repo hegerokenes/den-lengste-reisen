@@ -401,7 +401,8 @@ textarea { resize: vertical; }
         border-bottom: 1px solid rgba(0, 119, 105, .4); 
         margin: 20px auto 10px;
         padding-bottom: 5px;
-        line-height: 1em;
+        line-height: 1.4em;
+        padding-bottom: 16px;
         }
 
     #navigation-wrapper {
