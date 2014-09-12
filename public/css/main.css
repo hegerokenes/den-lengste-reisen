@@ -111,6 +111,8 @@ figure {
     vertical-align: top;
     }
 
+.col-2 figure { width: 49%; }
+
 .col-3 figure { width: 32.9%; }
 
 .col-4 figure { width: 24.5%; }
