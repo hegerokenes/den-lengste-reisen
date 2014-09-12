@@ -176,6 +176,7 @@ textarea { resize: vertical; }
 .icon.instagram { background-image: url(../img/icon_instagram.svg); }
 .icon.twitter { background-image: url(../img/icon_twitter.svg); }
 .icon.vimeo { background-image: url(../img/icon_vimeo.svg); }
+.icon.map { background-image: url(../img/icon_map.svg); }
 .icon.next { background-image: url(../img/icon_next.svg); }
 .icon.prev { background-image: url(../img/icon_prev.svg); }
 
