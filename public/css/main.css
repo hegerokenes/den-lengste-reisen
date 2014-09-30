@@ -522,6 +522,11 @@ article {
         min-height: 400px;
         margin-bottom: 30px;
         }
+    iframe.flickr-embedd.large {
+        width: 100%;
+        max-width: 100%;
+        min-height: 600px
+        }
 
     article header {
         position: fixed;
