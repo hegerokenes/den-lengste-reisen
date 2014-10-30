@@ -180,9 +180,9 @@ textarea { resize: vertical; }
     }
 
 .icon.large {
-    width: 75px;
-    height: 70px;
-    background-size: 50px auto;
+    width: 50px;
+    height: 75px;
+    background-size: 30px auto;
     }
 
 .icon.menu { background-image: url(../img/icon_menu.svg); }
@@ -195,7 +195,13 @@ textarea { resize: vertical; }
 .icon.next { background-image: url(../img/icon_next.svg); }
 .icon.prev { background-image: url(../img/icon_prev.svg); }
 
-
+@media screen and (min-width: 500px) {
+    .icon.large {
+        width: 75px;
+        height: 70px;
+        background-size: 50px auto;
+        }
+}
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -327,7 +333,11 @@ textarea { resize: vertical; }
         display: none;
         }
 
-    .open #blog-menu { display: block; }
+    .open #blog-menu { 
+        display: block; 
+        height: 100%;
+        overflow-y: scroll;
+        }
 
         #blog-menu h2 {
             color: #fff;
