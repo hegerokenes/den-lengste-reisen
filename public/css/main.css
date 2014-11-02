@@ -245,6 +245,7 @@ textarea { resize: vertical; }
     color: #1F1D1C;
     text-decoration: none;
     line-height: .8em;
+    -webkit-flex: 0 0 0;
     flex: 0 0 0;
     }
 
@@ -274,18 +275,21 @@ textarea { resize: vertical; }
 
     .main-menu-wrapper {
         display: flex;
+        -webkit-justify-content: flex-start;
         justify-content: flex-start;
         }
 
         #main-menu {
             display: inline-block;
             vertical-align: text-bottom;
+            -webkit-flex: 1 1 0;
             flex: 1 1 0;
             }
 
         #main-menu ul { 
             display: inline-block; 
             display: flex;
+            -webkit-justify-content: space-between;
             justify-content: space-between;
             }
 
