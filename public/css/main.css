@@ -117,6 +117,11 @@ figure { margin-bottom: 70px; }
         display: block;
         }
 
+        .imagestrip figcaption { 
+            margin-left: 2px;
+            margin-right: 2px; 
+            }
+
 .col-2 figure { width: 50%; }
 
 .col-3 figure { width: 33.333%; }
