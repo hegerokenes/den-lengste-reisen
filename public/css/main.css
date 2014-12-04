@@ -529,7 +529,7 @@ article {
         width: 100%;
         }
 
-    article p, article h2, article h3, iframe.flickr-embedd, article ul {
+    article p, article h2, article h3, iframe.flickr-embedd, article ul, .page-width {
         width: 85%;
         max-width: 700px;
         margin-left: auto;
