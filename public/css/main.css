@@ -117,6 +117,11 @@ figure { margin-bottom: 70px; }
         display: block;
         }
 
+        .imagestrip figcaption {
+            margin-left: 2px;
+            margin-right: 2px;
+            }
+
 .col-2 figure { width: 50%; }
 
 .col-3 figure { width: 33.333%; }
@@ -180,9 +185,9 @@ textarea { resize: vertical; }
     }
 
 .icon.large {
-    width: 75px;
-    height: 70px;
-    background-size: 50px auto;
+    width: 50px;
+    height: 75px;
+    background-size: 30px auto;
     }
 
 .icon.menu { background-image: url(../img/icon_menu.svg); }
@@ -195,7 +200,13 @@ textarea { resize: vertical; }
 .icon.next { background-image: url(../img/icon_next.svg); }
 .icon.prev { background-image: url(../img/icon_prev.svg); }
 
-
+@media screen and (min-width: 500px) {
+    .icon.large {
+        width: 75px;
+        height: 70px;
+        background-size: 50px auto;
+        }
+}
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -239,6 +250,7 @@ textarea { resize: vertical; }
     color: #1F1D1C;
     text-decoration: none;
     line-height: .8em;
+    -webkit-flex: 0 0 0;
     flex: 0 0 0;
     }
 
@@ -268,18 +280,21 @@ textarea { resize: vertical; }
 
     .main-menu-wrapper {
         display: flex;
+        -webkit-justify-content: flex-start;
         justify-content: flex-start;
         }
 
         #main-menu {
             display: inline-block;
             vertical-align: text-bottom;
+            -webkit-flex: 1 1 0;
             flex: 1 1 0;
             }
 
         #main-menu ul {
             display: inline-block;
             display: flex;
+            -webkit-justify-content: space-between;
             justify-content: space-between;
             }
 
@@ -327,7 +342,11 @@ textarea { resize: vertical; }
         display: none;
         }
 
-    .open #blog-menu { display: block; }
+    .open #blog-menu {
+        display: block;
+        height: 100%;
+        overflow-y: scroll;
+        }
 
         #blog-menu h2 {
             color: #fff;
@@ -510,7 +529,7 @@ article {
         width: 100%;
         }
 
-    article p, article h2, article h3, iframe.flickr-embedd, article ol, article dl {
+    article p, article h2, article h3, iframe.flickr-embedd, article ol, article dl, .page-width {
         width: 85%;
         max-width: 700px;
         margin-left: auto;
@@ -521,6 +540,11 @@ article {
         display: block;
         min-height: 400px;
         margin-bottom: 30px;
+        }
+    iframe.flickr-embedd.large {
+        width: 100%;
+        max-width: 100%;
+        min-height: 600px
         }
 
     article header {
