@@ -106,6 +106,8 @@ figure { margin-bottom: 70px; }
         background-color: #FFCA02;
         }
 
+.imagestrip { clear: both; }
+
 .imagestrip figure {
     display: inline-block;
     vertical-align: top;
@@ -197,6 +199,7 @@ textarea { resize: vertical; }
 .icon.twitter { background-image: url(../img/icon_twitter.svg); }
 .icon.vimeo { background-image: url(../img/icon_vimeo.svg); }
 .icon.map { background-image: url(../img/icon_map.svg); }
+.icon.sharks { background-image: url(../img/icon_sharks.svg); }
 .icon.next { background-image: url(../img/icon_next.svg); }
 .icon.prev { background-image: url(../img/icon_prev.svg); }
 
@@ -412,6 +415,18 @@ textarea { resize: vertical; }
             padding-left: 0;
             }
 
+    .in-page-menu {
+        font-size: .8em;
+        margin-top: 100px;
+        }
+
+        .in-page-menu li {
+            border-bottom: 1px solid #00B7A6;
+            margin-bottom: 5px;
+            }
+
+            .in-page-menu a { text-decoration: none; }
+
 @media screen and (min-width: 500px) {
 
     #travel-counter {
@@ -574,6 +589,56 @@ article {
             width: 100%;
             }
 
+    article section {
+        clear: both;
+        display: table;
+        width: 100%;
+        }
+
+    article aside {
+        float: right; 
+        width: 30%;
+        padding: 20px;
+        background: #00B7A6;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: .8em;
+        color: #333;
+        }
+
+        aside h3 { 
+            width: 100%; 
+            margin-top: 0;
+            text-transform: uppercase;
+            font-weight: normal;
+            border-bottom: 2px solid #FFCA02;
+            }
+
+    article ul, article ol, article dl {
+        margin-top: 5px;
+        margin-bottom: 30px;
+        }
+
+    article dl {
+        display: table;
+        width: 100%;
+        }
+        
+        article dt, article dd {
+            float: left;
+            }
+
+        article dt {
+            clear: left;
+            margin-right: 7px;
+            font-weight: bold;
+            }
+
+        article dd {
+            margin-left: 0;
+            }
+
         h1, h2 {
             text-transform: uppercase;
             font-weight: bold;
@@ -590,12 +655,18 @@ article {
             text-shadow: 1px 1px 4px #000;
             }
 
-        h1 span {
-            font-size: .6em;
-            display: block;
-            }
+            h1 span {
+                font-size: .6em;
+                display: block;
+                }
 
         h2 { color: #00B7A6; }
+
+            h2 i { 
+                font-size: .7em; 
+                font-weight: normal;
+                margin-left: 10px;
+                }
 
         article h2 {
             margin-top: 2.3em;
@@ -634,6 +705,23 @@ article {
     h1 { margin-top: 15%; }
 
 }
+
+
+/* SPECIAL CLASSES HAI PAGE */
+
+/* status */
+.iunc-cat { 
+    border-left: 5px solid #000; 
+    padding-left: 10px; 
+    }
+
+.cr {}
+.en {}
+.vu {}
+.nt {}
+.lc {}
+.dd { font-style: italic; }
+.ne {}
 
 
 /* ==========================================================================

@@ -279,15 +279,13 @@ menu,
 ol,
 ul { margin: 1em 0; }
 
-dd { margin: 0 0 0 40px; }
-
 /**
  * Address paddings set differently in IE 6/7.
  */
 
 menu,
 ol,
-ul { padding: 0 0 0 40px; }
+ul { padding: 0 0 0 70px; }
 
 /**
  * Correct list images handled incorrectly in IE 7.
