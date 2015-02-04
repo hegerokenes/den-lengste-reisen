@@ -824,6 +824,18 @@ article {
     *zoom: 1;
 }
 
+.hai h2 {
+  position: relative;
+}
+
+.hai h2 a {
+  font-size: 0.35em;
+  text-align: baseline;
+  position: absolute;
+  left: 0;
+  top: -24px;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
