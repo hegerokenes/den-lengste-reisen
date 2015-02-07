@@ -126,9 +126,9 @@ figure { margin-bottom: 70px; }
 
 .col-2 figure { width: 50%; }
 
-.col-3 figure { width: 33.233%; }
+.col-3 figure { width: 33.2%; }
 
-.col-4 figure { width: 25%; }
+.col-4 figure { width: 24.5%; }
 
 fieldset {
     border: 0;
@@ -417,7 +417,6 @@ textarea { resize: vertical; }
 
     .in-page-menu {
         font-size: .8em;
-        margin-top: 100px;
         }
 
         .in-page-menu li {
@@ -596,7 +595,7 @@ article {
         }
 
     article aside {
-        float: right; 
+        float: right;
         width: 30%;
         padding: 20px;
         background: #00B7A6;
@@ -607,8 +606,8 @@ article {
         color: #333;
         }
 
-        aside h3 { 
-            width: 100%; 
+        aside h3 {
+            width: 100%;
             margin-top: 0;
             text-transform: uppercase;
             font-weight: normal;
@@ -624,7 +623,7 @@ article {
         display: table;
         width: 100%;
         }
-        
+
         article dt, article dd {
             float: left;
             }
@@ -662,8 +661,8 @@ article {
 
         h2 { color: #00B7A6; }
 
-            h2 i { 
-                font-size: .7em; 
+            h2 i {
+                font-size: .7em;
                 font-weight: normal;
                 margin-left: 10px;
                 }
@@ -710,9 +709,9 @@ article {
 /* SPECIAL CLASSES HAI PAGE */
 
 /* status */
-.iunc-cat { 
-    border-left: 5px solid #000; 
-    padding-left: 10px; 
+.iunc-cat {
+    border-left: 5px solid #000;
+    padding-left: 10px;
     }
 
 .cr {}
@@ -823,6 +822,18 @@ article {
 
 .clearfix {
     *zoom: 1;
+}
+
+.hai h2 {
+  position: relative;
+}
+
+.hai h2 a {
+  font-size: 0.35em;
+  text-align: baseline;
+  position: absolute;
+  left: 0;
+  top: -24px;
 }
 
 /* ==========================================================================
