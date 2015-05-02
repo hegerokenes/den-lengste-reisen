@@ -713,10 +713,7 @@ article {
 /* SPECIAL CLASSES HAI PAGE */
 
 /* status */
-.iunc-cat {
-    border-left: 5px solid #000;
-    padding-left: 10px;
-    }
+.iunc-cat {}
 
 .cr {}
 .en {}
