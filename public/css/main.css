@@ -614,6 +614,10 @@ article {
             border-bottom: 2px solid #FFCA02;
             }
 
+        aside a {
+          color: #000;
+        }
+
     article ul, article ol, article dl {
         margin-top: 5px;
         margin-bottom: 30px;
