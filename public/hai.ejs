@@ -18,11 +18,12 @@
 		</p>
 
 		<p>
-			Så langt har vi sett 23 forskjellige arter i løpet av tiden vi har dykket. Det finnes per i dag 502 kjente haiarter, så det er fortsatt 479 arter vi ikke har sett.
+			Så langt har vi sett 24 forskjellige arter i løpet av tiden vi har dykket. Det finnes per i dag 502 kjente haiarter, så det er fortsatt 478 arter vi ikke har sett.
 		</p>
 
 		<h3 id="in-page-menu">Arter vi har sett</h3>
 		<ol class="in-page-menu" reversed="reversed">
+			<li><a href="#pleagicthresher">Pleagic Thresher <i>(Alopias pleagicus)</i></a></li>
 			<li><a href="#darkshyshark">Dark Shyshark <i>(Haploblepharus pictus)</i></a></li>
 			<li><a href="#broadnosesevengillshark">Broadnose Sevengill Shark <i>(Notorynchus cepedianus)</i></a></li>
 			<li><a href="#shortfinmako">Shortfin Mako Shark <i>(Isurus oxyrinchus)</i></a></li>
@@ -47,6 +48,37 @@
 			<li><a href="#zebrashark">Zebra Shark <i>(Stegostoma fasciatum)</i></a></li>
 			<li><a href="#blacktipreefshark">Blacktip Reef Shark <i>(Carcharhinus melanopterus)</i></a></li>
 		</ol>
+
+		<section id="pleagicthresher">
+			<h2>Pleagic Thresher <i>(Alopias pleagicus)</i> <a href=#in-page-menu>Topp ↑</a></h2>
+
+			<aside>
+				<h3>Fakta</h3>
+				<dl>
+					<dt>Familie</dt>
+					<dd>Mackerel Sharks</dt>
+					<dt>Status</dt>
+					<dd class="iunc-cat vu">Sårbar</dd>
+					<dt>Største registrerte lengde</dt>
+					<dd>365 cm</dd>
+					<dt>Geografisk distribusjon</dt>
+					<dd>Indo-Pasific</dd>
+					<dt>Les mer</dt>
+					<dd><a href="http://en.wikipedia.org/wiki/Pelagic_thresher">Wikipedia</a></dd>
+				</dl>
+				<h3>Observasjoner på verdenskartet</h3>
+				<%- partial("/partials/_map.ejs", {zoom: 4, points: "11.308333,124.191667"}) %>
+			</aside>
+
+			<p>
+				TODO
+			</p>
+
+			<h3>Observasjoner</h3>
+			<ol>
+				<li><time datetime="2015-05-03">03. mai 2015, Monad Shoal, Malapascua, Fillipinene</time></li>
+			</ol>
+		</section>
 
 		<section id="darkshyshark">
 			<h2>Dark Shyshark <i>(Haploblepharus pictus)</i> <a href=#in-page-menu>Topp ↑</a></h2>
@@ -1259,7 +1291,7 @@
 					<dd><a href="http://en.wikipedia.org/wiki/Whitetip_reef_shark">Wikipedia</a></dd>
 				</dl>
 				<h3>Observasjoner på verdenskartet</h3>
-				<img src="https://maps.googleapis.com/maps/api/staticmap?size=400x320&zoom=1&maptype=hybrid&format=png32&key=AIzaSyBUSiM968m5sufe_KHr5nJGn-TmdZo0-Fc&markers=color:red%7C-13.904280,146.628943|-23.867099,35.574331|-0.964863,-90.806808|-4.747946,55.547905|-30.250000,30.816667" alt="Map" />
+				<%- partial("/partials/_map.ejs", {zoom: 1, points: "-13.904280,146.628943|-23.867099,35.574331|-0.964863,-90.806808|-4.747946,55.547905|-30.250000,30.816667|11.308333,124.191667"}) %>
 			</aside>
 
 			<p>
@@ -1282,6 +1314,7 @@
 				<li><time datetime="2015-01-22">22. januar 2015, Regies, Tofo, Mosambik</time></li>
 				<li><time datetime="2015-02-02">02. februar 2015, Aliwal Shoal, Sør-Afrika</time></li>
 				<li><time datetime="2015-03-18">18. mars 2015, Mahe Island, Seyschellene</time></li>
+				<li><time datetime="2015-05-03">03. mai 2015, Monad Shoal, Malapascua, Fillipinene</time></li>
 			</ol>
 
 			<div class="imagestrip col-3">
