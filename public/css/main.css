@@ -202,6 +202,7 @@ textarea { resize: vertical; }
 .icon.sharks { background-image: url(../img/icon_sharks.svg); }
 .icon.next { background-image: url(../img/icon_next.svg); }
 .icon.prev { background-image: url(../img/icon_prev.svg); }
+.icon.trans { background-image: url(../img/icon_translate.svg); }
 
 @media screen and (min-width: 500px) {
     .icon.large {
