@@ -28,7 +28,6 @@ $(function() {
 	});
 
 	scaleFrontImage();
-	updateCounter();
 
 	$(window).on("resize", function () {
 		scaleFrontImage();
