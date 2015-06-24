@@ -2,16 +2,39 @@
     <header>
         <h1>
             Dag 273
-            <span></span>
+            <span>Apo Reef Livaboard</span>
         </h1>
         <time datetime="2015-05-18">18. mai 2015 . Apo Reef, Fillipinene</time>
-        <img class="main-image" src="../img/default_image.jpg" alt="" />
+        <img class="main-image" src="https://farm9.staticflickr.com/8880/18149677965_0f00646a7e_k.jpg" alt="" />
+        <!-- https://farm9.staticflickr.com/8880/18149677965_508f1d0615_m.jpg -->
     </header>
     
-
     <div class="post-content bg-subtle-grey">
 
+        <p>
+
+        </p>
+
+        <div class="imagestrip col-3">
+            <%- partial("../partials/_flickr.ejs", {link: "https://www.flickr.com/photos/hegerokenes/18149694075/in/album-72157653550519421/", url: "https://farm9.staticflickr.com/8880/18149694075_ac56e97729_z.jpg", caption: "" }) %>
+            <%- partial("../partials/_flickr.ejs", {link: "https://www.flickr.com/photos/hegerokenes/17527087814/in/album-72157653550519421/", url: "https://farm8.staticflickr.com/7742/17527087814_ed4b248980_z.jpg", caption: "" }) %>
+            <%- partial("../partials/_flickr.ejs", {link: "https://www.flickr.com/photos/hegerokenes/18149710475/in/album-72157653550519421/", url: "https://farm9.staticflickr.com/8841/18149710475_e55d1a33ef_z.jpg", caption: "" }) %>
+        </div>
+
+        <%- partial("../partials/_flickr.ejs", {link: "https://www.flickr.com/photos/hegerokenes/18123208346/in/album-72157653550519421/", url: "https://farm8.staticflickr.com/7780/18123208346_de3c111604_h.jpg", caption: "Klar for nattdykk" }) %>
+
+        <div class="imagestrip col-2">
+            <%- partial("../partials/_flickr.ejs", {link: "https://www.flickr.com/photos/hegerokenes/17527116364/in/album-72157653550519421/", url: "https://farm8.staticflickr.com/7794/17527116364_2d1c6195ca_z.jpg", caption: "" }) %>
+            <%- partial("../partials/_flickr.ejs", {link: "https://www.flickr.com/photos/hegerokenes/18150839291/in/album-72157653550519421/", url: "https://farm9.staticflickr.com/8843/18150839291_3bb463c992_z.jpg", caption: "" }) %>
+        </div>
+
         <%- partial("../partials/_vimeo.ejs", {id: "128141007"}) %>
+
+        <div class="imagestrip col-3">
+            <%- partial("../partials/_flickr.ejs", {link: "", url: "", caption: "" }) %>
+            <%- partial("../partials/_flickr.ejs", {link: "", url: "", caption: "" }) %>
+            <%- partial("../partials/_flickr.ejs", {link: "", url: "", caption: "" }) %>
+        </div>
 
 		<hr class="last" />
     </div>
