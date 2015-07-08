@@ -108,7 +108,7 @@ figure { margin-bottom: 70px; }
 
 .imagestrip { clear: both; }
 
-.imagestrip figure {
+.imagestrip figure, .instagram-strip .instagram-embed {
     display: inline-block;
     vertical-align: top;
     margin-right: -4px;
@@ -124,11 +124,11 @@ figure { margin-bottom: 70px; }
             margin-right: 2px;
             }
 
-.col-2 figure { width: 50%; }
+.col-2 figure, .col-2 .instagram-embed { width: 50%; }
 
-.col-3 figure { width: 33.2%; }
+.col-3 figure, .col-3 .instagram-embed { width: 33.2%; }
 
-.col-4 figure { width: 24.5%; }
+.col-4 figure, .col-4 .instagram-embed { width: 24.5%; }
 
 fieldset {
     border: 0;
@@ -561,6 +561,21 @@ article {
         max-width: 100%;
         min-height: 600px
         }
+
+    .instagram-embed {
+        position: relative; 
+        padding-bottom: 50%; 
+        height: 0; overflow: hidden;
+        } 
+
+        .instagram-embed iframe, .instagram-embed object, 
+        .instagram-embed embed { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            }
 
     article header {
         position: fixed;
