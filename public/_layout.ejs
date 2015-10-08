@@ -49,14 +49,14 @@
                 <ul class="cleanlist first">
                     <li class="odd">
                         <ul class="cleanlist">
-                            <% for(var month in public.reisebrev._data){ %>
-                              <h2><%= month %></h2>
-                              <% for(var slug in public.reisebrev._data[month]){ %>
-                                  <li style="background-image: url(<%= public.reisebrev._data[month][slug].image %>);"><a href="/reisebrev/<%= slug %>.html"><small><%= public.reisebrev._data[month][slug].date %></small><%= public.reisebrev._data[month][slug].title %></a></li>
+                            <% for(var monthIndex in public.reisebrev._data){ %>
+                              <h2><%= public.reisebrev._data[monthIndex].month %></h2>
+                              <% for(var index in public.reisebrev._data[monthIndex].entries){ %>
+                                  <li style="background-image: url(<%= public.reisebrev._data[monthIndex].entries[index].image %>);"><a href="/reisebrev/<%= public.reisebrev._data[monthIndex].entries[index].slug %>.html"><small><%= public.reisebrev._data[monthIndex].entries[index].date %></small><%= public.reisebrev._data[monthIndex].entries[index].title %></a></li>
                               <% }; %>
                             <% }; %>
                         </ul>
-                    </li>                    
+                    </li>
                 </ul>
             </nav>
 

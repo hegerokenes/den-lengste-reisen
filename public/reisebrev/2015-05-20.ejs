@@ -11,20 +11,20 @@
     <div class="post-content bg-subtle-grey">
 
 		<ul class="cleanlist in-page-menu">
-            <% for(var month in public.reisebrev._data){ %>
-              <h2><%= month %></h2>
-              <% for(var slug in public.reisebrev._data[month]){ %>
-                  <li style="background-image: url(<%= public.reisebrev._data[month][slug].image %>);">
-                    <a href="/reisebrev/<%= slug %>.html">
-                        <b>Dag <%= public.reisebrev._data[month][slug].day %></b>
-                        <%= public.reisebrev._data[month][slug].title %>
-                        <small><%= public.reisebrev._data[month][slug].date %></small>
+            <% for(var month = public.reisebrev._data.length-1; month >= 0; month--){ %>
+              <h2><%= public.reisebrev._data[month].month %></h2>
+              <% for(var index = public.reisebrev._data[month].entries.length-1; index >= 0; index--){ %>
+                  <li style="background-image: url(<%= public.reisebrev._data[month].entries[index].image %>);">
+                    <a href="/reisebrev/<%= public.reisebrev._data[month].entries[index].slug %>.html">
+                        <b>Dag <%= public.reisebrev._data[month].entries[index].day %></b>
+                        <%= public.reisebrev._data[month].entries[index].title %>
+                        <small><%= public.reisebrev._data[month].entries[index].date %></small>
                     </a>
                 </li>
               <% }; %>
             <% }; %>
         </ul>
-	    
+
 		<hr class="last" />
 	</div>
 </article>
