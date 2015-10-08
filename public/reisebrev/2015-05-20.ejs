@@ -1,29 +1,30 @@
 <article>
     <header>
         <h1>
-            Dag 275
-            <span>Hjemmeseier</span>
+            275
+            <span>Den lengste reisen</span>
         </h1>
-        <time datetime="2015-05-20">20. mai 2015 . Oslo, Norge</time>
+        <time datetime="2015-05-20">2014/2015 - Nord-, Mellom- og Sør-Amerika, Afrika, Australia og Asia</time>
         <img class="main-image" src="../img/default_image.jpg" alt="" />
     </header>
 
     <div class="post-content bg-subtle-grey">
 
-    	<div class="imagestrip col-2">
-	        <figure>
-	           <a href="" title="">
-	             <img src="" alt="" />
-	           </a>
-	           <figcaption></figcaption>
-	        </figure>
-	    </div>
-
-		<p>
-			Borte bra, men hjemme best sies det. Man har sannelig godt av å være litt hjemmefra. 20. mai landet vi på norsk jord igjen. Det har vært et helt fantastisk år, og vi har fått oppleve mye mer enn det vi noen gang kunne forestilt oss. Heges lillesøster Marit har bidratt til å illustrere noe av det.
-		</p>
-
-
+		<ul class="cleanlist in-page-menu">
+            <% for(var month in public.reisebrev._data){ %>
+              <h2><%= month %></h2>
+              <% for(var slug in public.reisebrev._data[month]){ %>
+                  <li style="background-image: url(<%= public.reisebrev._data[month][slug].image %>);">
+                    <a href="/reisebrev/<%= slug %>.html">
+                        <b>Dag <%= public.reisebrev._data[month][slug].day %></b>
+                        <%= public.reisebrev._data[month][slug].title %>
+                        <small><%= public.reisebrev._data[month][slug].date %></small>
+                    </a>
+                </li>
+              <% }; %>
+            <% }; %>
+        </ul>
+	    
 		<hr class="last" />
 	</div>
 </article>
