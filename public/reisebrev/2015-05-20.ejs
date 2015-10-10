@@ -18,7 +18,11 @@
                     <a href="/reisebrev/<%= public.reisebrev._data[month].entries[index].slug %>.html">
                         <b>Dag <%= public.reisebrev._data[month].entries[index].day %></b>
                         <%= public.reisebrev._data[month].entries[index].title %>
-                        <small><%= public.reisebrev._data[month].entries[index].date %></small>
+                        <small>
+                            <%= public.reisebrev._data[month].entries[index].date %>
+                            ,
+                            <%= public.reisebrev._data[month].entries[index].place %>
+                        </small>
                     </a>
                 </li>
               <% }; %>

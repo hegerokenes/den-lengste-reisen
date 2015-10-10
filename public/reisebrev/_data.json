@@ -6,6 +6,7 @@
         "slug": "2015-05-18",
         "day": "273",
         "date": "18.05",
+        "place": "Apo Reef, Fillipinene",
         "title": "Apo Reef Livaboard",
         "image": "https://farm9.staticflickr.com/8880/18149677965_508f1d0615_m.jpg"
       },
@@ -13,6 +14,7 @@
         "slug": "2015-05-12",
         "day": "267",
         "date": "12.05",
+        "place": "Malapascua, Fillipinene",
         "title": "Threshere på Malapascua",
         "image": "https://farm6.staticflickr.com/5343/17350337614_df1a6c6c2e_m.jpg"
       },
@@ -20,6 +22,7 @@
         "slug": "2015-05-01",
         "day": "256",
         "date": "01.05",
+        "place": "Donsol, Fillipinene",
         "title": "Hvalhaiens rike",
         "image": "https://farm8.staticflickr.com/7714/17902701292_d7eb78cb63_m.jpg"
       }
@@ -32,6 +35,7 @@
         "slug": "2015-04-25",
         "day": "249",
         "date": "25.04",
+        "place": "Melbourne & Sydney, Australia",
         "title": "Gjensyn med fortiden",
         "image": "https://farm8.staticflickr.com/7728/17864807136_3e4b4b4a0d_m.jpg"
       },
@@ -39,6 +43,7 @@
         "slug": "2015-04-04",
         "day": "229",
         "date": "04.04",
+        "place": "Perth, Australia",
         "title": "Påske på Australsk vis",
         "image": "https://farm9.staticflickr.com/8763/16967807580_f4b411c42b_m.jpg"
       }
@@ -51,6 +56,7 @@
         "slug": "2015-03-20",
         "day": "214",
         "date": "20.03",
+        "place": "Mahe, Seyschellene & Abu Dhabi, De forente arabiske emirater",
         "title": "Et ekte tropisk paradis",
         "image": "https://farm9.staticflickr.com/8767/17143392805_aa46c75b49_m.jpg"
       },
@@ -58,6 +64,7 @@
         "slug": "2015-03-15",
         "day": "209",
         "date": "15.03",
+        "place": "Serengeti, Ngorongoro og Zanzibar, Tanzania",
         "title": "Safari og strandliv",
         "image": "https://farm8.staticflickr.com/7670/16482481674_7b3e718736_m.jpg"
       }
@@ -70,6 +77,7 @@
         "slug": "2015-02-23",
         "day": "189",
         "date": "23.02",
+        "place": "Simonstown, Cape Town, Sør-Afrika",
         "title": "Havet og storbyen",
         "image": "https://farm8.staticflickr.com/7601/16809618392_ca4ee6bb5e_m.jpg"
       },
@@ -77,6 +85,7 @@
         "slug": "2015-02-16",
         "day": "189",
         "date": "16.02",
+        "place": "Gaansbai, Sør-Afrika",
         "title": "Burdykking med hvithai",
         "image": "https://farm9.staticflickr.com/8678/16614570895_218b5dd8c6_m.jpg"
       },
@@ -84,6 +93,7 @@
         "slug": "2015-02-13",
         "day": "179",
         "date": "13.02",
+        "place": "Chintsa, Addo, J-Bay og Mossel Bay, Sør-Afrika", 
         "title": "Roadtrip down south",
         "image": "https://farm9.staticflickr.com/8576/16171296734_3841852184_m.jpg"
       },
@@ -92,6 +102,7 @@
         "day": "174",
         "date": "08.02",
         "title": "Landet inni landet",
+        "place": "", 
         "image": "https://farm9.staticflickr.com/8654/16567816247_39c72f07dd_m.jpg"
       },
       {
@@ -99,6 +110,7 @@
         "day": "173",
         "date": "07.02",
         "title": "En uke med haidykking",
+        "place": "Umkomaas, Sør-Afrika", 
         "image": "https://farm8.staticflickr.com/7455/16461191172_3385d59081_m.jpg"
       }
     ]
@@ -109,6 +121,7 @@
       {
         "slug": "2015-01-29",
         "day": "169",
+        "place": "Mlilwane, Swaziland", 
         "date": "29.01",
         "title": "Et land uten kyst",
         "image": "https://farm9.staticflickr.com/8724/16130146764_10bd22e340_m.jpg"
@@ -116,6 +129,7 @@
       {
         "slug": "2015-01-26",
         "day": "161",
+        "place": "Tofo Beach og Maputo, Mosmbik", 
         "date": "26.01",
         "title": "Tilbake til Tofo",
         "image": "https://farm9.staticflickr.com/8682/16343952179_7741fce2ae_m.jpg "
@@ -123,6 +137,7 @@
       {
         "slug": "2015-01-14",
         "day": "149",
+        "place": "Nelspruit, Sør-Afrika", 
         "date": "14.01",
         "title": "Cruising Krüger",
         "image": "https://farm8.staticflickr.com/7317/16525950741_b62bbbce18_m.jpg"
@@ -130,6 +145,7 @@
       {
         "slug": "2015-01-04",
         "day": "139",
+        "place": "New York, USA", 
         "date": "04.01",
         "title": "Betongjungelen",
         "image": "https://farm8.staticflickr.com/7503/16110984558_abb8a43344_m.jpg"
@@ -142,6 +158,7 @@
       {
         "slug": "2014-12-29",
         "day": "132",
+        "place": "Cancun, Mexico", 
         "date": "29.12",
         "title": "Julefeiring i plussgrader",
         "image": "https://farm8.staticflickr.com/7507/15965596898_cfd5917eaa_m.jpg"
@@ -149,6 +166,7 @@
       {
         "slug": "2014-12-10",
         "day": "114",
+        "place": "Cancun, Mexico", 
         "date": "10.12",
         "title": "Meksikansk rekord",
         "image": "https://farm8.staticflickr.com/7509/15485699414_84134d8b96_n.jpg"
@@ -161,6 +179,7 @@
       {
         "slug": "2014-11-30",
         "day": "104",
+        "place": "Havanna, Cuba", 
         "date": "30.11",
         "title": "Cubalibre",
         "image": "https://farm9.staticflickr.com/8627/15814179409_4a6dabdc9c_m.jpg"
@@ -168,6 +187,7 @@
       {
         "slug": "2014-11-12",
         "day": "86",
+        "place": "Cusco, Peru", 
         "date": "12.11",
         "title": "Fjelltur i Peru",
         "image": "https://farm8.staticflickr.com/7483/15765189698_d6cc907ff8_m.jpg"
@@ -175,6 +195,7 @@
       {
         "slug": "2014-11-06",
         "day": "80",
+        "place": "Cusco, Peru", 
         "date": "06.11",
         "title": "Opp i høyden - stisykling",
         "image": "https://farm9.staticflickr.com/8610/15756617169_f30bd90d8c_m.jpg"
@@ -187,6 +208,7 @@
       {
         "slug": "2014-10-31",
         "day": "74",
+        "place": "Puerto Vilamil, Galápagos Ecuador", 
         "date": "31.10",
         "title": "Dyrelivet på Galápagos",
         "image": "https://farm8.staticflickr.com/7580/15311597234_498bd8c777_m.jpg"
@@ -194,6 +216,7 @@
       {
         "slug": "2014-10-19",
         "day": "62",
+        "place": "Puerto Ayora, Galápagos Ecuador", 
         "date": "19.10",
         "title": "Hammertime",
         "image": "https://farm8.staticflickr.com/7507/15686492785_645b81582e_z.jpg"
@@ -201,6 +224,7 @@
       {
         "slug": "2014-10-11",
         "day": "54",
+        "place": "Guayaquil, Ecuador", 
         "date": "11.10",
         "title": "Urbane drager",
         "image": "https://farm6.staticflickr.com/5611/15661438485_76e8dd4bb3_m.jpg"
@@ -208,6 +232,7 @@
       {
         "slug": "2014-10-09",
         "day": "52",
+        "place": "Las Flores, El Salvador", 
         "date": "09.10",
         "title": "To steg fram, ett tilbake",
         "image": "https://farm6.staticflickr.com/5607/15484633216_e2576563bd_m.jpg"
@@ -215,6 +240,7 @@
       {
         "slug": "2014-10-01",
         "day": "44",
+        "place": "Útila Bay Islands, Honduras", 
         "date": "01.10",
         "title": "Caribbean Lionfish Containment Diver",
         "image": "https://farm4.staticflickr.com/3932/15450228885_4a2202024c_n.jpg"
@@ -227,6 +253,7 @@
       {
         "slug": "2014-09-29",
         "day": "42",
+        "place": "Útila Bay Islands, Honduras", 
         "date": "29.09",
         "title": "Level up - Rescue Diver",
         "image": "https://farm6.staticflickr.com/5597/15447243311_275f48fea9_m.jpg"
@@ -234,6 +261,7 @@
       {
         "slug": "2014-09-24",
         "day": "37",
+        "place": "Útila Bay Islands, Honduras", 
         "date": "24.09",
         "title": "Fridykkekurs",
         "image": "https://farm4.staticflickr.com/3922/15216119377_398af8d504_n.jpg"
@@ -241,6 +269,7 @@
       {
         "slug": "2014-09-13",
         "day": "26",
+        "place": "Finca Ixobel, Guatemala", 
         "date": "13.09",
         "title": "Tikal, Flores og Finca Ixobal",
         "image": "https://farm4.staticflickr.com/3916/15254278985_4d08b215f0.jpg"
@@ -248,6 +277,7 @@
       {
         "slug": "2014-09-08",
         "day": "21",
+        "place": "Caye Caulker, Belize", 
         "date": "08.09",
         "title": "Det store blå hullet",
         "image": "https://farm4.staticflickr.com/3920/15162375706_f85c28c10a_m.jpg"
@@ -255,6 +285,7 @@
       {
         "slug": "2014-09-07",
         "day": "20",
+        "place": "Caye Caulker, Belize", 
         "date": "07.09",
         "title": "Ah mi gat wahn gud gud taim",
         "image": "https://farm4.staticflickr.com/3858/14976284830_22dfb0214c_m.jpg"
@@ -262,6 +293,7 @@
       {
         "slug": "2014-09-03",
         "day": "16",
+        "place": "Isla Cozumel, Mexico", 
         "date": "03.09",
         "title": "Triatlon på Cozumel",
         "image": "https://farm6.staticflickr.com/5586/15057407642_928c7a1f56_m.jpg"
@@ -269,6 +301,7 @@
       {
         "slug": "2014-09-01",
         "day": "14",
+        "place": "Isla Cozumel, Mexico", 
         "date": "01.09",
         "title": "Dykking, dykking, dykking",
         "image": "https://farm4.staticflickr.com/3908/14927672449_0f0c0ddc4b_m.jpg"
@@ -281,6 +314,7 @@
       {
         "slug": "2014-08-28",
         "day": "10",
+        "place": "", 
         "date": "28.08",
         "title": "Dykkeparadiset Isla Cozumel",
         "image": "https://farm4.staticflickr.com/3845/15057808825_1e5dfc9322_m.jpg"
@@ -288,6 +322,7 @@
       {
         "slug": "2014-08-24",
         "day": "6",
+        "place": "Isla Mujeres, Mexico", 
         "date": "24.08",
         "title": "Goodbye Isla Mujeres",
         "image": "https://farm4.staticflickr.com/3898/15034868946_4b6cefe4f0_m.jpg"
@@ -295,6 +330,7 @@
       {
         "slug": "2014-08-23",
         "day": "5",
+        "place": "Isla Mujeres, Mexico", 
         "date": "23.08",
         "title": "Den første uka",
         "image": "https://farm4.staticflickr.com/3915/14817947640_d89a9941b1_m.jpg"
