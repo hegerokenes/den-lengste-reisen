@@ -387,17 +387,15 @@ textarea { resize: vertical; }
 
             #blog-menu a small { margin-right: 3px; }
 
-    .in-page-menu {
-        margin: 20px auto 0;
-        text-align: center;
-        }
+    .in-page-menu { margin: 20px auto 0; }
+    .in-page-menu.advanced { text-align: center; }
 
-        .in-page-menu h2 { 
+        .in-page-menu.advanced h2 { 
             margin: 0; 
             display: table-cell;
             }
 
-        .in-page-menu li, .in-page-menu h2 { 
+        .in-page-menu.advanced li, .in-page-menu.advanced h2 { 
             width: 240px;
             height: 180px;
             text-align: center;
@@ -405,16 +403,16 @@ textarea { resize: vertical; }
             vertical-align: top;
             }
 
-            .in-page-menu a { 
+            .in-page-menu.advanced a { 
                 background: rgba(255, 255, 255, 0.5);
                 display: block;
                 padding: 3px;
                 color: #333;
                 }
 
-                .in-page-menu b { display: block; }
+                .in-page-menu.advanced b { display: block; }
 
-                .in-page-menu small { 
+                .in-page-menu.advanced small { 
                     margin-right: 5px; 
                     display: block;
                     }
