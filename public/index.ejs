@@ -1,1 +1,34 @@
-<%- partial("/reisebrev/2015-05-20.ejs") %>
+<article>
+    <header>
+        <h1>
+            275 dager
+            <span>Den lengste reisen</span>
+        </h1>
+        <time datetime="2015-05-20">2014/2015 - Nord-, Mellom- og Sør-Amerika, Afrika, Australia og Asia</time>
+        <img class="main-image" src="../img/default_image.jpg" alt="" />
+    </header>
+
+    <div class="post-content bg-subtle-grey">
+
+		<ul class="cleanlist in-page-menu advanced">
+            <% for(var month = public.reisebrev._data.length-1; month >= 0; month--){ %>
+              <li class="month"><h2><%= public.reisebrev._data[month].month %></h2></li>
+              <% for(var index = public.reisebrev._data[month].entries.length-1; index >= 0; index--){ %>
+                  <li style="background-image: url(<%= public.reisebrev._data[month].entries[index].image %>);">
+                    <a href="/reisebrev/<%= public.reisebrev._data[month].entries[index].slug %>.html">
+                        <b>Dag <%= public.reisebrev._data[month].entries[index].day %></b>
+                        <b><%= public.reisebrev._data[month].entries[index].title %></b>
+                        <small>
+                            <%= public.reisebrev._data[month].entries[index].date %>
+                            .
+                            <%= public.reisebrev._data[month].entries[index].place %>
+                        </small>
+                    </a>
+                </li>
+              <% }; %>
+            <% }; %>
+        </ul>
+
+		<hr class="last" />
+	</div>
+</article>

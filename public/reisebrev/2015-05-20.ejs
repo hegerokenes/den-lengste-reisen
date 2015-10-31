@@ -1,34 +1,16 @@
 <article>
     <header>
         <h1>
-            275 dager
-            <span>Den lengste reisen</span>
+            Dag 275
+            <span>Hjemmeseier</span>
         </h1>
-        <time datetime="2015-05-20">2014/2015 - Nord-, Mellom- og Sør-Amerika, Afrika, Australia og Asia</time>
-        <img class="main-image" src="../img/default_image.jpg" alt="" />
+        <time datetime="2015-05-20">20. mai 2015 . Oslo, Norge</time>
+        <img class="main-image" src="https://farm9.staticflickr.com/8880/18149677965_0f00646a7e_k.jpg" alt="" />
+        <!-- https://farm9.staticflickr.com/8880/18149677965_508f1d0615_m.jpg -->
     </header>
-
+    
     <div class="post-content bg-subtle-grey">
 
-		<ul class="cleanlist in-page-menu advanced">
-            <% for(var month = public.reisebrev._data.length-1; month >= 0; month--){ %>
-              <h2><%= public.reisebrev._data[month].month %></h2>
-              <% for(var index = public.reisebrev._data[month].entries.length-1; index >= 0; index--){ %>
-                  <li style="background-image: url(<%= public.reisebrev._data[month].entries[index].image %>);">
-                    <a href="/reisebrev/<%= public.reisebrev._data[month].entries[index].slug %>.html">
-                        <b>Dag <%= public.reisebrev._data[month].entries[index].day %></b>
-                        <b><%= public.reisebrev._data[month].entries[index].title %></b>
-                        <small>
-                            <%= public.reisebrev._data[month].entries[index].date %>
-                            .
-                            <%= public.reisebrev._data[month].entries[index].place %>
-                        </small>
-                    </a>
-                </li>
-              <% }; %>
-            <% }; %>
-        </ul>
-
-		<hr class="last" />
-	</div>
+        
+    </div>
 </article>
