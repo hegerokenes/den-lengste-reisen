@@ -395,12 +395,18 @@ textarea { resize: vertical; }
             display: table-cell;
             }
 
-        .in-page-menu.advanced li, .in-page-menu.advanced h2 { 
+        .in-page-menu.advanced li { 
             width: 240px;
             height: 180px;
             text-align: center;
             display: inline-block;
             vertical-align: top;
+            }
+
+        .in-page-menu.advanced li.month {
+            padding-top: 20px;
+            height: 40px;
+            vertical-align: bottom;
             }
 
             .in-page-menu.advanced a { 
