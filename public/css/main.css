@@ -576,6 +576,11 @@ textarea { resize: vertical; }
 
 /* ==== ARTICLES ====*/
 
+main {
+    width: 100%;
+    overflow: hidden; 
+}
+
 article {
     max-width: 2000px;
     margin-left: auto;
