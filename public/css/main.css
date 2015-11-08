@@ -647,12 +647,18 @@ article {
 
     article header {
         position: fixed;
-        top: 70px;
+        top: 75px;
         left: 0;
         right: 0;
         text-align: center;
         background-color: #E8E8E0;
         }
+
+    @media screen and (min-width: 500px) {
+        article header {
+            top: 70px;
+        }
+    }
 
         article header h1, article header time  {
             opacity: 0;
