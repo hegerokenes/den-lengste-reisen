@@ -27,6 +27,8 @@ html {
 
 body { min-width: 320px; }
 
+* { box-sizing: border-box; }
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -102,6 +104,7 @@ figure { margin-bottom: 70px; }
         font-style: italic;
         padding: 10px 20px;
         font-size: .9em;
+        line-height: 1.2em;
         color: #FFFBEF;
         background-color: #FFCA02;
         }
@@ -150,6 +153,8 @@ textarea { resize: vertical; }
         }
 
 }
+
+ul, ol { padding-left: 10%; }
 
 /* ==========================================================================
    Browse Happy prompt
@@ -398,9 +403,13 @@ textarea { resize: vertical; }
     .in-page-menu { 
         margin: 20px auto 0; 
         padding-left: 10%;
-        width: 60%;
+        width: 80%;
         }
-    .in-page-menu.advanced { text-align: center; }
+    .in-page-menu.advanced { 
+        text-align: center; 
+        padding-left: 0;
+        width: 90%;
+        }
 
         .in-page-menu.advanced h2 { 
             margin: 0; 
@@ -408,12 +417,19 @@ textarea { resize: vertical; }
             }
 
         .in-page-menu.advanced li { 
-            width: 240px;
+            width: 49%;
             height: 180px;
             text-align: center;
             display: inline-block;
             vertical-align: top;
             }
+
+        @media screen and (min-width: 500px) {
+            .in-page-menu.advanced li { 
+                width: 240px;
+                height: 180px;
+                }
+        }
 
         .in-page-menu.advanced li.month {
             padding-top: 20px;
@@ -596,7 +612,7 @@ article {
         width: 100%;
         }
 
-    article p, article h2, article h3, iframe.flickr-embedd, article ol, article dl, .page-width {
+    article p, article h2, article h3, iframe.flickr-embedd, article ol, article ul, article dl, .page-width {
         width: 85%;
         max-width: 700px;
         margin-left: auto;
@@ -740,10 +756,16 @@ article {
         h2 { color: #00B7A6; }
 
             h2 i {
-                font-size: .7em;
+                display: block;
+                font-size: .6em;
+                line-height: 1em;
                 font-weight: normal;
                 margin-left: 10px;
                 }
+
+            @media screen and (min-width: 500px) {
+                h2 i { display: inline; }                
+            }
 
         article h2 {
             margin-top: 2.3em;
