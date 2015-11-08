@@ -408,7 +408,8 @@ ul, ol { padding-left: 10%; }
     .in-page-menu.advanced { 
         text-align: center; 
         padding-left: 0;
-        width: 90%;
+        width: 100%;
+        max-width: 100%;
         }
 
         .in-page-menu.advanced h2 { 
@@ -433,7 +434,7 @@ ul, ol { padding-left: 10%; }
 
         .in-page-menu.advanced li.month {
             padding-top: 20px;
-            height: 40px;
+            height: 60px;
             vertical-align: bottom;
             }
 
