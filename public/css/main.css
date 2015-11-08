@@ -189,7 +189,7 @@ textarea { resize: vertical; }
 .icon.large {
     width: 50px;
     height: 75px;
-    background-size: 30px auto;
+    background-size: 70% auto;
     }
 
 .icon.menu { background-image: url(../img/icon_menu.svg); }
@@ -204,7 +204,7 @@ textarea { resize: vertical; }
 .icon.prev { background-image: url(../img/icon_prev.svg); }
 .icon.trans { background-image: url(../img/icon_translate.svg); }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
     .icon.large {
         width: 75px;
         height: 70px;
@@ -265,7 +265,7 @@ textarea { resize: vertical; }
         }
 
     #travel-counter small {
-        font-size: .5em;
+        font-size: .6em;
         line-height: 1em;
         }
 
@@ -293,6 +293,7 @@ textarea { resize: vertical; }
             vertical-align: text-bottom;
             -webkit-flex: 1 1 0;
             flex: 1 1 0;
+            width: 100%;
             }
 
         #main-menu ul {
@@ -302,13 +303,20 @@ textarea { resize: vertical; }
             justify-content: space-between;
             }
 
-            #main-menu li { display: inline-block; }
+            #main-menu li { 
+                display: inline-block; 
+                width: 20%;
+                }
+                
+            @media screen and (min-width: 500px) {
+                #main-menu li { width: 100%; }
+            }
 
             #main-menu a {
                 display: block;
                 position: relative;
                 overflow: visible;
-                width: 75px;
+                width: 100%;
                 }
 
             /*
@@ -387,7 +395,11 @@ textarea { resize: vertical; }
 
             #blog-menu a small { margin-right: 3px; }
 
-    .in-page-menu { margin: 20px auto 0; }
+    .in-page-menu { 
+        margin: 20px auto 0; 
+        padding-left: 10%;
+        width: 60%;
+        }
     .in-page-menu.advanced { text-align: center; }
 
         .in-page-menu.advanced h2 { 
@@ -493,7 +505,6 @@ textarea { resize: vertical; }
                 }
 
                 #main-menu ul {
-                    width: 75px;
                     margin-left: auto;
                     margin-right: auto;
                     display: block;
@@ -647,8 +658,7 @@ article {
         }
 
     article aside {
-        float: right;
-        width: 30%;
+        
         padding: 20px;
         background: #00B7A6;
         margin-right: 20px;
@@ -657,6 +667,13 @@ article {
         font-size: .8em;
         color: #333;
         }
+
+    @media screen and (min-width: 768px) {
+        article aside {
+            float: right;
+            width: 30%;
+        }
+    }
 
         aside h3 {
             width: 100%;
