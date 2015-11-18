@@ -813,6 +813,77 @@ article {
 }
 
 
+.footer-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    }
+
+    .nav {
+        background-color: rgb(0, 119, 105);
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .6em;
+        letter-spacing: 1px;
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+        height: 39px;
+        }
+
+    .nav:hover { height: 160px; }
+
+    .footer-nav img {
+        display: block;
+        width: 200px;
+        }
+
+    .footer-nav .dir {
+        display: block;
+        padding: 10px 20px;
+        }
+
+    .next {
+        right: 0;
+        left: auto;
+        }
+
+    .prev {
+        left: 75px;
+        }
+
+    .title { display: none; }
+
+    .nav:hover .title {
+        position: absolute;
+        background-color: rgba(255, 255, 255, .3);
+        right: 0;
+        left: 0;
+        display: block;
+        padding: 5px;
+        bottom: 0;
+        text-align: center;
+        }
+
+    .nav:hover .title { color: #fff; }
+
+        .title:after {
+            display: block;
+            content: "";
+            position: absolute;
+            right: -20px;
+            bottom: 0px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid rgb(255, 202, 2);
+            border-top: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            }
+
 /* SPECIAL CLASSES HAI PAGE */
 
 /* status */
