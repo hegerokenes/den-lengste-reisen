@@ -1,0 +1,84 @@
+<%
+	var prevEntry;
+	var prevTitle;
+	var prevLink;
+	var prevImg;
+
+	var nextLink;
+	var nextTitle;
+	var nextEntry;
+	var nextImg;
+
+	for (var i = 0; i < public.reisebrev._data.length; ++i) 
+	{
+		var month = public.reisebrev._data[i];
+
+		for (var j = 0; j < month.entries.length; ++j)
+		{
+			var entry = month.entries[j];
+			if (entry.slug === current.source) {
+				
+				// First post, first month
+				if (i === 0 && j === 0) {
+					nextEntry = month.entries[j+1];
+				}
+
+				// Last post, last month
+				else if (i === public.reisebrev._data.length - 1 && 
+						 j === month.entries.length - 1) {
+					prevEntry = month.entries[j-1];
+				}
+
+				// First post in month
+				else if (j === 0) {
+					var prevMonth = public.reisebrev._data[i-1];
+					prevEntry = prevMonth.entries[prevMonth.entries.length -1];	
+					nextEntry = month.entries[j+1];
+				}
+
+				// Last post in month
+				else if (j === month.entries.length - 1)
+				{
+					var nextMonth = public.reisebrev._data[i+1];
+					prevEntry = month.entries[j-1];
+					nextEntry = nextMonth.entries[0];
+				}
+				// All other posts
+				else {
+					prevEntry = month.entries[j-1];
+					nextEntry = month.entries[j+1];
+				}
+			}			
+		}
+	}
+
+	if (nextEntry) {
+		nextLink = nextEntry.slug + '.html';
+		nextTitle = nextEntry.title;
+		nextImg = nextEntry.image;
+	}
+
+	if (prevEntry) {
+		prevLink = prevEntry.slug + '.html';
+		prevTitle = prevEntry.title;
+		prevImg = prevEntry.image;
+	}
+%>
+
+
+<nav class="footer-nav">
+	<% if (nextEntry) { %>
+	<a class="next nav" href="<%- nextLink -%>" title="">
+		<span class="dir">Neste reisebrev</span>
+		<img src="<%- nextImg -%>" alt="" />
+		<span class="title"><%- nextTitle -%></span>
+	</a>
+	<% } %>
+	<% if (prevEntry) { %>
+	<a class="prev nav" href="<%- prevLink -%>" title="">
+		<span class="dir">Forrige reisebrev</span>
+		<img src="<%- prevImg -%>" alt="" />
+		<span class="title"><%- prevTitle -%></span>
+	</a>
+	<% } %>
+</nav>

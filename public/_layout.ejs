@@ -68,8 +68,10 @@
     -->
 
         <main>
-            <%- yield %>
+            <%- yield %>            
         </main>
+
+        <%- partial("partials/_navigation.ejs", {next: "", prev: "" }) %>
 
         <script src="/js/jquery.min.js"></script>
         <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script-->
