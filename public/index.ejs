@@ -16,13 +16,15 @@
               <% for(var index = 0; index < public.reisebrev._data[month].entries.length; index++){ %>
                   <li style="background-image: url(<%= public.reisebrev._data[month].entries[index].image %>);">
                     <a href="/reisebrev/<%= public.reisebrev._data[month].entries[index].slug %>.html">
-                        <b>Dag <%= public.reisebrev._data[month].entries[index].day %></b>
-                        <b><%= public.reisebrev._data[month].entries[index].title %></b>
-                        <small>
-                            <%= public.reisebrev._data[month].entries[index].date %>
-                            .
-                            <%= public.reisebrev._data[month].entries[index].place %>
-                        </small>
+                        <span>
+                            <b>Dag <%= public.reisebrev._data[month].entries[index].day %></b>
+                            <b><%= public.reisebrev._data[month].entries[index].title %></b>
+                            <small>
+                                <%= public.reisebrev._data[month].entries[index].date %>
+                                .
+                                <%= public.reisebrev._data[month].entries[index].place %>
+                            </small>
+                        </span>
                     </a>
                 </li>
               <% }; %>
