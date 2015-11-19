@@ -25,7 +25,14 @@ $(function() {
 		} else {
 			$("article header").removeClass("visible");
 		}
+		
+		if(($(window).scrollTop() + $(window).height()) > $(document).height() - 200) {
+       		$(".nav").addClass("visible").removeClass("wait");
+   		} else {
+   			$(".nav").addClass("wait").removeClass("visible");
+   		}
 	});
+
 
 	scaleFrontImage();
 

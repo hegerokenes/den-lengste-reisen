@@ -830,11 +830,34 @@ article {
         letter-spacing: 1px;
         position: absolute;
         bottom: 0;
+        width: 200px;
         overflow: hidden;
         height: 39px;
+        transition: all .7s ease;
         }
 
-    .nav:hover { height: 160px; }
+    .wait.next {
+        -webkit-transform: translateX(200px);
+        transform: translateX(200px);
+    }
+    .visible.next {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .wait.prev {
+        -webkit-transform: translateX(-200px);
+        transform: translateX(-200px);
+    }
+    .visible.prev { 
+        -webkit-transform: translateX(0);   
+        transform: translateX(0);   
+    }
+
+    .nav:hover { 
+        height: 160px; 
+        transition: all .5s ease;
+        }
 
     .footer-nav img {
         display: block;
@@ -855,7 +878,10 @@ article {
         left: 75px;
         }
 
-    .title { display: none; }
+    .title { 
+        opacity: 0; 
+        transition: opacity 1s;
+        }
 
     .nav:hover .title {
         position: absolute;
@@ -866,6 +892,8 @@ article {
         padding: 5px;
         bottom: 0;
         text-align: center;
+        opacity: 1;
+        transition: opacity 1s;
         }
 
     .nav:hover .title { color: #fff; }
