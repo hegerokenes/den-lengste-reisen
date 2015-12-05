@@ -53,7 +53,7 @@
                               <h2><%= public.reisebrev._data[monthIndex].month %></h2>
                               <% for(var index in public.reisebrev._data[monthIndex].entries){ %>
                                   <li style="background-image: url(<%= public.reisebrev._data[monthIndex].entries[index].image %>);">
-                                    <a href="/reisebrev/<%= public.reisebrev._data[monthIndex].entries[index].slug %>.html">
+                                    <a href="/reisebrev/<%= public.reisebrev._data[monthIndex].entries[index].slug %>.html" class="<%- current.source == public.reisebrev._data[monthIndex].entries[index].slug ? 'active' : '' %>">
                                         <small><%= public.reisebrev._data[monthIndex].entries[index].date %>
                                         </small>
                                         <%= public.reisebrev._data[monthIndex].entries[index].title %>
