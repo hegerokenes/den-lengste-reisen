@@ -24,18 +24,18 @@
 
         <section id="navigation-wrapper" class="">
             <div class="main-menu-wrapper bg-main-profile">
-                <a href="/" id="travel-counter">
+                <a href="/" id="travel-counter" title="Gå til forsiden, oversikt over alle reisebrevene" class="<%- current.source == 'index' ? 'active' : '' %>">
                     <div id="travel-counter-value" class="days">275</div>
                     <small>dager på reise</small>
                 </a>
                 <nav id="main-menu">
                     <ul class="cleanlist">
-                        <li><a href="#" class="no-text icon large menu" id="blog-list-menu" title="Se alle reisebrev">Bloggposter</a></li>
+                        <li><a href="#" class="no-text icon large menu <%- current.source == 'reisebrev' ? 'active' : '' %>" id="blog-list-menu" title="Se alle reisebrev">Bloggposter</a></li>
                         <li><a href="http://www.travellerspoint.com/member_map.cfm?user=hegerokenes&tripid=686060" class="no-text icon large map" title="Reiserute i kart">Kart</a></li>
                         <li><a href="https://www.flickr.com/photos/hegerokenes/collections/72157646337037838/" class="no-text icon large flickr" title="Bilder på Flickr">Flickr</a></li>
                         <li><a href="https://vimeo.com/channels/denlengstereisen" class="no-text icon large vimeo" title="Videoer på Vimeo">Vimeo</a></li>
                         <li><a href="http://instagram.com/follesoe" class="no-text icon large instagram">Instagram</a></li>
-                        <li><a href="/hai.html" class="no-text icon large sharks">Hai</a></li>
+                        <li><a href="/hai.html" class="no-text icon large sharks <%- current.source == 'hai' ? 'active' : '' %>">Hai</a></li>
                         <li><a href="http://translate.google.com/translate?js=n&sl=no&tl=en&u=http://hege.rokenes.com" title="Translate with Google Translate" class="no-text icon large trans"></a>
                     </ul>
                 </nav>
@@ -52,7 +52,14 @@
                             <% for(var monthIndex in public.reisebrev._data){ %>
                               <h2><%= public.reisebrev._data[monthIndex].month %></h2>
                               <% for(var index in public.reisebrev._data[monthIndex].entries){ %>
-                                  <li style="background-image: url(<%= public.reisebrev._data[monthIndex].entries[index].image %>);"><a href="/reisebrev/<%= public.reisebrev._data[monthIndex].entries[index].slug %>.html"><small><%= public.reisebrev._data[monthIndex].entries[index].date %></small><%= public.reisebrev._data[monthIndex].entries[index].title %></a></li>
+                                  <li style="background-image: url(<%= public.reisebrev._data[monthIndex].entries[index].image %>);">
+                                    <a href="/reisebrev/<%= public.reisebrev._data[monthIndex].entries[index].slug %>.html">
+                                        <small><%= public.reisebrev._data[monthIndex].entries[index].date %>
+                                        </small>
+                                        <%= public.reisebrev._data[monthIndex].entries[index].title %>
+
+                                    </a>
+                                </li>
                               <% }; %>
                             <% }; %>
                         </ul>

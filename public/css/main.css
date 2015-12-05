@@ -254,7 +254,8 @@ ul, ol { padding-left: 10%; }
     max-width: 75px;
     min-width: 75px;
     display: inline-block;
-    margin: 10px auto 0;
+    margin: 0 auto;
+    padding-top: 10px;
     font-family: 'Roboto Condensed', sans-serif;
     color: #1F1D1C;
     text-decoration: none;
@@ -262,6 +263,8 @@ ul, ol { padding-left: 10%; }
     -webkit-flex: 0 0 0;
     flex: 0 0 0;
     }
+
+    #travel-counter.active, #travel-counter:hover, #travel-counter:focus { background: #FFCA02; }
 
     .days {
         font-size: 2.3em;
@@ -393,7 +396,7 @@ ul, ol { padding-left: 10%; }
             text-shadow: 1px 1px 7px #000;
             }
 
-            #blog-menu a:hover, #blog-menu a:focus {
+            #blog-menu a.active, #blog-menu a:hover, #blog-menu a:focus {
                 color: #FFCA02;
                 cursor: pointer;
                 }
@@ -505,7 +508,8 @@ ul, ol { padding-left: 10%; }
         width: 90%;
         display: block;
         border-bottom: 1px solid rgba(0, 119, 105, .4);
-        margin: 20px auto 10px;
+        margin: 0 auto 10px;
+        padding-top: 20px;
         padding-bottom: 5px;
         line-height: 1.4em;
         padding-bottom: 16px;
