@@ -1037,11 +1037,11 @@ article {
     *zoom: 1;
 }
 
-.hai h2 {
+.hai h2, .hval h2 {
   position: relative;
 }
 
-.hai h2 a {
+.hai h2 a, .hval h2 a {
   font-size: 0.35em;
   text-align: baseline;
   position: absolute;
