@@ -205,6 +205,7 @@ ul, ol { padding-left: 10%; }
 .icon.vimeo { background-image: url(../img/icon_vimeo.svg); }
 .icon.map { background-image: url(../img/icon_map.svg); }
 .icon.sharks { background-image: url(../img/icon_sharks.svg); }
+.icon.whales { background-image: url(../img/icon_whales.svg); }
 .icon.next { background-image: url(../img/icon_next.svg); }
 .icon.prev { background-image: url(../img/icon_prev.svg); }
 .icon.trans { background-image: url(../img/icon_translate.svg); }
@@ -1037,11 +1038,11 @@ article {
     *zoom: 1;
 }
 
-.hai h2 {
+.hai h2, .hval h2 {
   position: relative;
 }
 
-.hai h2 a {
+.hai h2 a, .hval h2 a {
   font-size: 0.35em;
   text-align: baseline;
   position: absolute;
