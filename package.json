@@ -7,8 +7,8 @@
     "doc": "doc"
   },
   "scripts": {
-    "build": "harp compile -o ../hegerokenes.github.io && cp CNAME ../hegerokenes.github.io/CNAME",
-    "start": "harp server"
+    "build": "harp . ../hegerokenes.github.io && cp CNAME ../hegerokenes.github.io/CNAME",
+    "start": "harp ."
   },
   "repository": {
     "type": "git",
