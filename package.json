@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/hegerokenes/den-lengste-reisen/issues"
   },
-  "homepage": "https://github.com/hegerokenes/den-lengste-reisen"
+  "homepage": "https://github.com/hegerokenes/den-lengste-reisen",
+  "dependencies": {
+    "harp": "^0.46.0"
+  }
 }
