@@ -127,6 +127,8 @@ figure { margin-bottom: 70px; }
             margin-right: 2px;
             }
 
+.col-1 figure, .col-1 .instagram-embed { width: 100%; }
+
 .col-2 figure, .col-2 .instagram-embed { width: 50%; }
 
 .col-3 figure, .col-3 .instagram-embed { width: 33.2%; }
