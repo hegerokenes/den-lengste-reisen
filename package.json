@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/hegerokenes/den-lengste-reisen",
   "dependencies": {
-    "harp": "^0.46.0"
+    "harp": "^0.46.1"
   }
 }
